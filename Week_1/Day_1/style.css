@@ -23,6 +23,7 @@ p {
 .box {
   width: 300px;
   height: 300px;
+  border: 100px solid black;
 }
 
 .green-background {
@@ -60,7 +61,7 @@ p {
   color: white;
 
   /* Border */
-  /*   border-width: 10px;
+  /*   border-width: 10px;´
   border-style: solid;
   border-color: black; */
   border: 10px solid black;
