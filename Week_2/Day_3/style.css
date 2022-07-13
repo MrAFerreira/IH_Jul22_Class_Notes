@@ -1,0 +1,22 @@
+.leaf {
+  height: 100px;
+  background-color: green;
+  border: 2px solid black;
+}
+
+#branch {
+  height: 100px;
+  background-color: brown;
+  border: 2px solid black;
+}
+
+.twig {
+  height: 50px;
+  background-color: burlywood;
+  border: 2px solid black;
+}
+
+.dark {
+  background-color: #444;
+  color: white;
+}
