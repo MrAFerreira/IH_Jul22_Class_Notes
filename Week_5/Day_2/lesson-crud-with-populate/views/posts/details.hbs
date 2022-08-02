@@ -1,0 +1,33 @@
+<h2>{{title}}</h2>
+
+<div>
+  {{content}}
+  <hr />
+  by:
+  {{author.username}}
+</div>
+
+{{#unless comments}}
+  <h6>No comments on this post yet!</h6>
+{{/unless}}
+<ul>
+
+  {{#each comments}}
+    <li>
+
+      {{this.author.username}}
+      -
+      {{this.content}}
+    </li>
+  {{/each}}
+</ul>
+
+<h3>Add a comment</h3>
+<form action='/posts/{{_id}}/comment' method='post'>
+  <label for='author'>Author</label>
+  <input type='text' name='authorName' id='author' />
+
+  <textarea name='content' id='content' cols='30' rows='10'></textarea>
+
+  <button type='submit'>Comment</button>
+</form>

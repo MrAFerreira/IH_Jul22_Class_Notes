@@ -22,7 +22,11 @@ app.get('/', (req, res, next) => {
 
 //Route Params
 app.get('/user/:username', (req, res, next) => {
-  res.send(req.params);
+  let username = req.params.username;
+
+  User.findOne({ username }).then((foundUser) => {
+    res.render('profile', foundUser);
+  });
 });
 
 app.get('/user/:username/books/:id', (req, res, next) => {
