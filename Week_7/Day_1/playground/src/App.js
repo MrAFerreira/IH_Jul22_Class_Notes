@@ -83,6 +83,7 @@ function App() {
           cohort="WebDev"
           city="Lisbon"
           week={7}
+          isSuccedding={true}
           favouritePokemon={{ name: 'Slowpoke', type: 'Water' }}
         />
         <hr />
